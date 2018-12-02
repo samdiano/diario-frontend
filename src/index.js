@@ -8,11 +8,17 @@ import { createLogger } from 'redux-logger';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import jwtDecode from 'jwt-decode';
 import queryString from 'query-string';
+import setAuthToken from './util/AuthTokenUtil';
+import { asyncActions } from './util/AsyncUtil';
+// import { msgInfoActions } from './actions/MsgInfoActions';
+import { LOGIN } from './actionTypes/UserConstants';
+
 import App from './App';
 import rootReducer from './reducers/Index';
+
 const parsedToken = queryString.parse(window.location.search);
 
-// const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(createLogger(), thunk)));
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(createLogger(), thunk)));
 
 // if (localStorage.getItem('token') === null) {
 //   if (parsedToken.token) {
@@ -24,20 +30,20 @@ const parsedToken = queryString.parse(window.location.search);
 //   }
 // }
 
-// if (localStorage.token) {
-//   // setting token to request headers for authentication
-//   setAuthToken(localStorage.token);
-//   // adding user object to User's store
-//   // store.dispatch(asyncActions(LOGIN).success(jwtDecode(localStorage.token)));
-// }
+if (localStorage.token) {
+  // setting token to request headers for authentication
+  setAuthToken(localStorage.token);
+  // adding user object to User's store
+  store.dispatch(asyncActions(LOGIN).success(jwtDecode(localStorage.token)));
+}
 
 const Index = () => (
   <BrowserRouter>
-    {/* <Provider store={ store }> */}
+    <Provider store={ store }>
       <div>
         <App />
       </div>
-    {/* </Provider> */}
+    </Provider>
   </BrowserRouter>
 );
 

@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 
 // import article from './ArticleReducer';
 // import myArticle from './MyArticleReducer';
-// import user from './UserReducer';
+import user from './UserReducer';
 // import info from './MsgInfoReducer';
 // import deleteItem from './DeleteReducer';
 // import category from './CategoryReducer';
@@ -29,7 +29,7 @@ const rootReducer = combineReducers({
   // profile,
   // signup,
   // tags,
-  // user,
+  user,
   // verifyUser,
   // followUser,
   // notification
