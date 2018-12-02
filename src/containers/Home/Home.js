@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { Component } from 'react';
 import '../../style.scss';
 
@@ -15,7 +16,7 @@ export default class Home extends Component {
                 <i className="fas fa-sign-in-alt"></i>&nbsp;Log in</a>
         </span>
 
-        <a href="javascript:void(0);" className="icon">
+        <a href="" className="icon">
             <i className="fa fa-bars"></i>
         </a>
     </div>
@@ -107,6 +108,6 @@ export default class Home extends Component {
         </div>
     </footer>
       </div>
-    )
+    );
   }
 }
