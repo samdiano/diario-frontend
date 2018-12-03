@@ -3,6 +3,7 @@ import { combineReducers } from 'redux';
 // import article from './ArticleReducer';
 // import myArticle from './MyArticleReducer';
 import user from './UserReducer';
+import entries from './EntryReducer';
 // import info from './MsgInfoReducer';
 // import deleteItem from './DeleteReducer';
 // import category from './CategoryReducer';
@@ -30,6 +31,7 @@ const rootReducer = combineReducers({
   // signup,
   // tags,
   user,
+  entries,
   // verifyUser,
   // followUser,
   // notification
