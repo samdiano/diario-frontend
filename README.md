@@ -1,5 +1,5 @@
 # Diario
-[![Build Status](https://travis-ci.org/samdiano/Diario.svg?branch=develop)](https://travis-ci.org/samdiano/Diario) [![Coverage Status](https://coveralls.io/repos/github/samdiano/Diario/badge.svg?branch=develop)](https://coveralls.io/github/samdiano/Diario?branch=develop) <a href="https://codeclimate.com/github/samdiano/Diario/maintainability"><img src="https://api.codeclimate.com/v1/badges/77c46a463cdb6bb9e992/maintainability" /></a>
+[![Build Status](https://travis-ci.org/samdiano/Diario.svg?branch=develop)](https://travis-ci.org/samdiano/Diario) [![Coverage Status](https://coveralls.io/repos/github/oladimillion/MyDiary/Diario/badge.svg?branch=develop)](https://coveralls.io/github/samdiano/Diario?branch=develop) <a href="https://codeclimate.com/github/samdiano/Diario/maintainability"><img src="https://api.codeclimate.com/v1/badges/77c46a463cdb6bb9e992/maintainability" /></a>
 
 Diario is an online journal where users can pen down their thoughts and feelings.
 
